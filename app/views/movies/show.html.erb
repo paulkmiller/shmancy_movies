@@ -1,3 +1,12 @@
+<!-- This is some of my favorite parts of full-stack development.  We're using erb to not only interface with 
+     with our Controller (which is handling our API calls and pushing information into the database), but to 
+     also directly interact with our API based on the logic declared in the controller, making the process 
+     of parsing the json that much easier. This keeps us from having to write extra code (javascript) and
+     instead interface with what's already been established in our controllers, making things easier to 
+     organize and keeps things DRY. -->
+
+
+
 <h1><%= @result['Title'] %></h1>
 <p>Genre: <%= @result['Genre'] %></p>
 <%= image_tag @result['Poster'] %>

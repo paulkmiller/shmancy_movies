@@ -20,3 +20,4 @@ This is a simple Rails app that'll puplate a list of movies based on search crit
 == Perks
 
 * Persistent Database! If you favorite a movie, it'll populate a "favorites" list that can be viewed at /favorites
+* Comments throughout the app describing and explaining what each file accomplishes
