@@ -1,0 +1,12 @@
+<h1>Movie Search</h1>
+
+<form action="/movies" method="get">
+  <label>Search: <input name="search"></label>
+  <button>Submit</button>
+</form>
+
+<ul>
+  <% @results.each do |result| %>
+    <li><a href="/movies/<%= result['imdbID'] %>"><%= result['Title'] %></a></li>
+  <% end %>
+</ul>

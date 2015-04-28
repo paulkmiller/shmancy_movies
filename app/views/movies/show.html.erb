@@ -1,0 +1,19 @@
+<h1><%= @result['Title'] %></h1>
+<p>Genre: <%= @result['Genre'] %></p>
+<%= image_tag @result['Poster'] %>
+
+<% if @favorite.new_record? %>
+
+  <%= form_for @favorite do |f| %>
+    <%= f.hidden_field :movie_id %>
+    <%= f.hidden_field :title %>
+    <%= f.submit 'Favorite :)' %>
+  <% end %>
+
+<% else %>
+
+  <%= form_for @favorite, :method => :delete do |f| %>
+    <%= f.submit 'Unfavorite :(' %>
+  <% end %>
+
+<% end %>

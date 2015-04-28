@@ -1,0 +1,7 @@
+<h1>Favorites</h1>
+
+<ul>
+  <% @favorites.each do |favorite| %>
+    <li><a href="/movies/<%= favorite.movie_id %>"><%= favorite.title %></a></li>
+  <% end %>
+</ul>
