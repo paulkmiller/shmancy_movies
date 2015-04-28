@@ -1,4 +1,4 @@
-== Movies App
+== Shmancy Movies
 
 This is a simple Rails app that'll puplate a list of movies based on search criteria gathered from an input form communicating with the OMDBapi API.
 
