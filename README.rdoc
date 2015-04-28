@@ -15,7 +15,7 @@ This is a simple Rails app that'll puplate a list of movies based on search crit
 
 * In your terminal, type "rake db:create" and "rake db:migrate" within the root directory of the app to establish the database
 
-* Once your database is ready, type "rails s" in console, then navigate to localhost:4567 to view the app!
+* Once your database is ready, type "rails s" in console, then navigate to localhost:3000 to view the app!
 
 == Perks
 
