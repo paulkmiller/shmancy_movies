@@ -1,28 +1,22 @@
-== README
+== Movies App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple Rails app that'll puplate a list of movies based on search criteria gathered from an input form communicating with the OMDBapi API.
 
-Things you may want to cover:
+* OMDBapi API
 
-* Ruby version
+* postgreSQL Database
 
-* System dependencies
+* Ultra light-weight
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Simple and Easy Set-Up!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Installation
+
+* In your terminal, type "rake db:create" and "rake db:migrate" within the root directory of the app to establish the database
+
+* Once your database is ready, type "rails s" in console, then navigate to localhost:4567 to view the app!
+
+== Perks
+
+* Persistent Database! If you favorite a movie, it'll populate a "favorites" list that can be viewed at /favorites
