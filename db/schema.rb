@@ -11,14 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150307184030) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20160326005846) do
 
   create_table "favorites", force: true do |t|
-    t.string "movie_id"
-    t.string "title"
+    t.integer  "user_id",    null: false
+    t.integer  "movie_id",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "movies", force: true do |t|
+    t.string   "title",        null: false
+    t.string   "director",     null: false
+    t.integer  "rating"
+    t.date     "release_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email",      null: false
+    t.string   "username",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
